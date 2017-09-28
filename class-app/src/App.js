@@ -3,6 +3,7 @@ import FunctionalComponent from './components/FunctionalComponent';
 import MyComponent from './components/MyComponent';
 import Timer from './components/Timer';
 import FriendsList from './components/FriendsList';
+import Form from './components/Form';
 import logo from './logo.svg';
 import './App.css';
 
@@ -27,6 +28,10 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+
+        <Form />
+
+        
         <FunctionalComponent name="Three Six Mafia" />
         <MyComponent name="The Original"/>
         <MyComponent name="Pizza"/>
@@ -35,6 +40,8 @@ class App extends Component {
         <Timer />
 
         <FriendsList friendsArr = {this.allMyFriends} />
+
+        
       </div>
     );
   }
